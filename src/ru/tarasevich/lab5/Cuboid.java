@@ -40,7 +40,7 @@ public class Cuboid extends Body
     
     @Override
     public void print() {
-        System.out.println("id="+this.getId()+", "+this.getName()+", высота: "+this.getHig()
+        System.out.println(this.getTime() + "; " + "id="+this.getId()+", "+this.getName()+", высота: "+this.getHig()
                 +", Ширина: "+this.getWide()+", Длина: "+Math.ceil(this.getLen()*100)/100
                 +", Объём: "+Math.ceil(volume*100)/100+", Площадь: "+Math.ceil(square*100)/100);
     }

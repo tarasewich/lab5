@@ -44,7 +44,7 @@ public class Cube extends Body
 
    @Override
     public void print() {
-        System.out.println("id= "+this.getId()+", "+this.getName()+", Ребро: "+Math.ceil(this.getHig()*100)/100
+        System.out.println(this.getTime() + "; " + "id= "+this.getId()+", "+this.getName()+", Ребро: "+Math.ceil(this.getHig()*100)/100
                             +", Сумма рёбер: "+this.getSum()+", Длина диаг.: "+Math.ceil(this.getDiag()*100)/100
                             +", Объём: "+Math.ceil(volume*100)/100+", Площадь: "+Math.ceil(square*100)/100);
     }

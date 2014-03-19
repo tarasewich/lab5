@@ -48,7 +48,7 @@ public class Cone extends Body
    
     @Override
     public void print() {
-        System.out.println("id= "+this.getId()+", "+this.getName()+", Высота: "+this.getHig()+", sin угла при основании: "+Math.ceil(this.getAngleB()*100)/100 
+        System.out.println(this.getTime() + "; " + "id= "+this.getId()+", "+this.getName()+", Высота: "+this.getHig()+", sin угла при основании: "+Math.ceil(this.getAngleB()*100)/100 
                             +", sin угла при вершине: "+Math.ceil(this.getAngleT()*100)/100 
                             +", Объём: "+Math.ceil(volume*100)/100 +", Площадь: "+Math.ceil(square*100)/100);
     }

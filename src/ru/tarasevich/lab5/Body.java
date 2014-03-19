@@ -1,5 +1,8 @@
 package ru.tarasevich.lab5;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public abstract class Body implements Comparable <Body>, Volumable,Squareable 
 {
@@ -17,6 +20,14 @@ public abstract class Body implements Comparable <Body>, Volumable,Squareable
     public  int getId(){
         return id;
     }
+        
+    public String getTime() 
+    {
+	DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY HH:mm:ss");
+	Date date = new Date();
+        return dateFormat.format(date);
+    }
+    
     public String getName(){
         return name;
     }
